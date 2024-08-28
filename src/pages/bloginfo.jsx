@@ -8,8 +8,8 @@ const location = useLocation()
 const path = location.pathname
 let id = path.split('/')[2]
 
-let fData = data.filter((v,i) => (v.id === id ))[0]
-
+let fData = data.filter((v,i) => (v.id == id ))[0]
+console.log(fData)
   return (
     <>
         <Header />
