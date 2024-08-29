@@ -11,6 +11,8 @@ export default function Header() {
                     <li><Link to={'/about-us'}>About</Link></li>
                     <li><Link to={'/courses'}>Course</Link></li>
                     <li><Link to={'/blog'}>Blogs</Link></li>
+                    <li><Link to={'/clothes'}>Clothes</Link></li>
+                    <li><Link to={'/form'}>Form</Link></li>
                 </ul>
             </nav>
         </div>

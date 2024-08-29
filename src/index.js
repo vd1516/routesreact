@@ -9,7 +9,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Blog from './pages/blog';
 import BlogInfo from './pages/bloginfo';
 import NotFound from './pages/notfound';
-
+import Clothes from './pages/clothes';
+import ClothesInfo from './pages/clothesinfo';
+import Form from './pages/form';
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.bundle"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const allRouter = createBrowserRouter([
@@ -34,8 +38,20 @@ const allRouter = createBrowserRouter([
     element:<BlogInfo/>
   },
   {
+    path:'/clothes',
+    element:<Clothes/>
+  },
+  {
+    path:'/clothes/:id',
+    element:<ClothesInfo/>
+  },
+  {
     path:'/*',
     element:<NotFound/>
+  },
+  {
+    path:'/form',
+    element:<Form/>
   }
 ])
 
